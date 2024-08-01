@@ -20,8 +20,9 @@ const Weather = () => {
 
   const onSubmitCity = () => {
     if (text.trim() !== "") {
-      console.log("Updating city to:", text.trim()); // Log the new city value
-      setCity(text.trim()); // Update city state
+      console.log("Submitting city:", text.trim());
+      setCity(text.trim());
+      setText(""); // Clear input field
     }
   };
 
@@ -36,21 +37,21 @@ const Weather = () => {
   }, []);
 
   const fetchData = useCallback(async () => {
-    const cData = city || cityData; // Use city state or fallback to cityData
-    console.log("Fetching weather data for:", cData); // Log the city being used
+    const cData = city || cityData;
+    console.log("Fetching data for city:", cData);
 
     if (cData) {
-      setLoad(true); // Set loading state
+      setLoad(true);
       try {
         const response = await Axios.get(
           `https://api.openweathermap.org/data/2.5/weather?q=${cData}&units=${unit}&appid=7aa60764d53fa84a94c6631fd0f52d32`
         );
-        console.log(response.data); // Log the API response
+        console.log("API Response Data:", response.data);
         setWeatherData(response.data);
         setLoad(false);
         setError(null);
       } catch (err) {
-        console.error("Error fetching data:", err.response ? err.response.data : err.message); // Log more error details
+        console.error("API Error:", err.response ? err.response.data : err.message);
         setLoad(false);
         setError('City not found or API request failed.');
         setWeatherData(null);
@@ -59,12 +60,13 @@ const Weather = () => {
   }, [city, unit, cityData]);
 
   useEffect(() => {
+    console.log("City or unit changed, triggering fetchData");
     fetchData();
   }, [city, unit, fetchData]);
 
   return (
     <div className="weather">
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"
           placeholder="Enter city"
