@@ -1,0 +1,230 @@
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-bar{
+    width: 350px;
+    height: 35px;
+    background-color: #ada8a86a;
+    color: #8d8686df;
+    font-size: 23px;
+    padding-left: 25px;
+    border: solid 2px #bcb6b688;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.btn-enter{
+    width: 90px;
+    height: 40px;
+    background-color: #514760;
+    color: #fff;
+    border: solid 2px #bcb6b688;
+    font-size: 23px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.temp-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.img{
+    width: 160px;
+    height: 160px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.para-t{
+    font-size: 100px;
+    margin: 0px;
+    padding: 0px;
+    color: #605e5ed5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.city-name{
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    color: #404040cb;
+   font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.para-description{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #5c6666cd;
+    padding-top: 0px;
+    margin-top: -38px;
+}
+
+.weather-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4b504eee;
+    padding-bottom: 0px;
+    margin-bottom: 6px;
+}
+
+.para{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c2e2edc;
+    padding-bottom: 0px;
+    margin-bottom: 6px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.dateTime{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time{
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #3d3f3fdc;
+}
+
+@media (max-width : 572px),(max-width : 720px){
+    
+    .search-bar{
+        width: 180px;
+        height: 35px;
+        background-color: #ada8a86a;
+        color: #8d8686df;
+        font-size: 23px;
+        padding-left: 25px;
+        border: solid 2px #bcb6b688;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .btn-enter{
+        width: 90px;
+        height: 40px;
+        border: solid 2px #bcb6b688;
+        font-size: 23px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+    }
+    .temp-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .img{
+        width: 100px;
+        height: 100px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .para-t{
+        font-size: 50px;
+        margin: 0px;
+        padding: 0px;
+        color: #605e5ed5;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .city-name{
+        font-size: 30px;
+        margin: 0px;
+        padding: 0px;
+        color: #404040cb;
+       font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .para-description{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #5c6666cd;
+        padding-top: 0px;
+        margin-top: -38px;
+    }
+    
+    .weather-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -30px;
+    }
+    
+    .div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        margin-right: 15px;
+    }
+    
+    .p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #4b504eee;
+        padding-bottom: 0px;
+        margin-bottom: 6px;
+    }
+    
+    .para{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #2c2e2edc;
+        padding-bottom: 0px;
+        margin-bottom: 6px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .dateTime{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .time{
+        font-family: Times, 'Times New Roman', serif;
+        font-size: 24px;
+        font-weight: 800;
+        color: #3d3f3fdc;
+    }
+}

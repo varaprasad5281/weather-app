@@ -1,0 +1,23 @@
+.unit-toggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.celsius{
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #3d3f3fdc;
+}
+.fahrenheit{
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #3d3f3fdc;
+    margin-left: 15px;
+}
+
+.radio{
+    width: 16px;
+    height: 16px;
+}
